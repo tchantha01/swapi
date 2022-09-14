@@ -14,7 +14,7 @@ const getInfo = (res) => {
     
 }
 const errCallback = err => console.log(err.response.data)
-// const alderaanInfo = () => axios.get(`${baseURL}/planets/2/`).then(getInfo).catch(errCallback)
+
 const alderaanInfo = () => {
     axios.get(`${baseURL}/planets/2/`).then((res) => {
         let residentURL = res.data.residents;
